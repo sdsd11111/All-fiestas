@@ -80,7 +80,7 @@ export function FeaturedCategoriesSection() {
 
   return (
     <section className="py-16 bg-gradient-to-br from-purple-50 to-orange-50 overflow-hidden">
-      <div className="w-full px-4 mx-auto">
+      <div className="container mx-auto px-4 w-full">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#4B0082" }}>
             Categorías Destacadas

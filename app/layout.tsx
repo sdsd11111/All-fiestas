@@ -19,16 +19,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-      <html lang="es" style={{ width: '100vw', minHeight: '100vh', margin: 0, padding: 0, boxSizing: 'border-box', overflowX: 'hidden' }}>
-        <body
-          className={`font-sans ${GeistSans.variable} ${GeistMono.variable} bg-background text-foreground w-full min-h-screen overflow-x-hidden`}
-          style={{ width: '100vw', minHeight: '100vh', margin: 0, padding: 0, boxSizing: 'border-box', overflowX: 'hidden' }}
-        >
-          <div style={{ width: '100vw', minHeight: '100vh', margin: 0, padding: 0, boxSizing: 'border-box', overflowX: 'hidden' }}>
+    <html lang="es" className="w-full h-full overflow-x-hidden">
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} bg-background text-foreground w-full min-h-screen overflow-x-hidden`}>
+        <div className="w-full min-h-screen overflow-x-hidden">
+          <div className="w-full overflow-x-hidden">
             <Suspense fallback={null}>{children}</Suspense>
             <Analytics />
           </div>
-        </body>
-      </html>
+        </div>
+      </body>
+    </html>
   )
 }
