@@ -2,6 +2,13 @@
 import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Users, Gift } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export function AboutSection() {
   const images = [
@@ -59,7 +66,55 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="md:hidden max-w-5xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {[
+                {
+                  icon: <Users className="h-8 w-8 text-accent" />,
+                  title: "Importadores Directos",
+                  description: "Desde octubre de 2024, trabajamos directamente con proveedores para ofrecerte los mejores precios.",
+                },
+                {
+                  icon: <Star className="h-8 w-8 text-accent" />,
+                  title: "Más de 100 Personajes",
+                  description: "La mayor variedad de personajes para hacer de tu celebración algo único y especial.",
+                },
+                {
+                  icon: <Gift className="h-8 w-8 text-accent" />,
+                  title: "Piñatas Personalizadas",
+                  description: "Creamos piñatas únicas y personalizadas desde solo $4.",
+                },
+              ].map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card className="h-full text-center p-8 hover:shadow-lg transition-shadow duration-300 border-2 hover:border-accent/50">
+                      <CardContent className="space-y-4">
+                        <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
+                          {item.icon}
+                        </div>
+                        <h3 className="text-xl font-semibold text-primary">{item.title}</h3>
+                        <p className="text-muted-foreground">
+                          {item.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card className="text-center p-8 hover:shadow-lg transition-shadow duration-300 border-2 hover:border-accent/50">
             <CardContent className="space-y-4">
               <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">

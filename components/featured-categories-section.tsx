@@ -7,7 +7,7 @@ const categories = [
   {
     id: "cumpleanos",
     title: "Artículos de Cumpleaños",
-    description: "La selección más completa para celebraciones de cumpleaños",
+    description: "Sorpresas personalizas, piñatas personalizadas, Tematicas personajes infantiles",
     modalTitle: "Artículos Destacados de Cumpleaños",
     whatsappMessage: "Hola! Me interesan los artículos de cumpleaños. ¿Podrían darme más información?",
     images: [
@@ -21,7 +21,7 @@ const categories = [
   {
     id: "despedida",
     title: "Despedida de Soltera",
-    description: "Productos elegantes y divertidos para despedidas inolvidables",
+    description: "Juego de Tematica para adultos, Diademas, Piñatas personalizadas",
     modalTitle: "Artículos Destacados de Despedida de Soltera",
     whatsappMessage: "Hola! Me interesan los productos para despedida de soltera. ¿Podrían darme más información?",
     images: [
@@ -35,7 +35,7 @@ const categories = [
   {
     id: "babyshower",
     title: "Baby Shower y Sex Reveal",
-    description: "Celebra la llegada de tu bebé con nuestros productos especiales",
+    description: "Decoraciones colores azul y rosa, Extintores de colores, lanzadores de confetti",
     modalTitle: "Artículos Destacados de Baby Shower y Sex Reveal",
     whatsappMessage: "Hola! Me interesan los productos para baby shower y sex reveal. ¿Podrían darme más información?",
     images: [
@@ -83,7 +83,7 @@ export function FeaturedCategoriesSection() {
       <div className="container mx-auto px-4 w-full">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#4B0082" }}>
-            Categorías Destacadas
+            Productos Destacados
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Descubre nuestras categorías más populares con productos especialmente seleccionados

@@ -1,6 +1,13 @@
 "use client"
 
 import { Star } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const testimonials = [
   {
@@ -36,7 +43,42 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="md:hidden max-w-6xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((t, idx) => (
+                <CarouselItem key={idx} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center border-2 border-[#FF8C00]/30 h-full">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#FF8C00] shadow"
+                      />
+                      <p className="text-md text-gray-700 mb-4">{t.text}</p>
+                      <div className="flex items-center justify-center mb-2">
+                        {[...Array(t.rating)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 text-[#FF8C00]" fill="#FF8C00" />
+                        ))}
+                      </div>
+                      <span className="font-semibold text-[#4B0082] text-lg">{t.name}</span>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((t, idx) => (
             <div key={idx} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 flex flex-col items-center text-center border-2 border-[#FF8C00]/30">
               <img

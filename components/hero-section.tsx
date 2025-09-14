@@ -26,7 +26,7 @@ export function HeroSection() {
             objectPosition: 'center'
           }} 
         />
-        <div className="absolute inset-0 bg-white/80" />
+        <div className="absolute inset-0 bg-white/65" />
       </div>
 
       <div className="relative z-10 w-full px-2 sm:px-4 text-center">
@@ -37,12 +37,7 @@ export function HeroSection() {
             <span className="text-primary">a Precios Incomparables.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed px-2">
-            No necesitas regatear para obtener el mejor precio. Descubre la mayor variedad de artículos de fiesta, con
-            precios justos para todos.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-12">
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
