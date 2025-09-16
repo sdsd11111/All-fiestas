@@ -7,7 +7,7 @@ const categories = [
   {
     id: "cumpleanos",
     title: "Artículos de Cumpleaños",
-    description: "Sorpresas personalizas, piñatas personalizadas, Tematicas personajes infantiles",
+    description: "Sorpresas personalizas, piñatas personalizadas, Tematicas personajes infantiles y mas.",
     modalTitle: "Artículos Destacados de Cumpleaños",
     whatsappMessage: "Hola! Me interesan los artículos de cumpleaños. ¿Podrían darme más información?",
     images: [
@@ -21,7 +21,7 @@ const categories = [
   {
     id: "despedida",
     title: "Despedida de Soltera",
-    description: "Juego de Tematica para adultos, Diademas, Piñatas personalizadas",
+    description: "Juego de Tematica para adultos, Diademas, Piñatas personalizadas y mas.",
     modalTitle: "Artículos Destacados de Despedida de Soltera",
     whatsappMessage: "Hola! Me interesan los productos para despedida de soltera. ¿Podrían darme más información?",
     images: [
@@ -35,7 +35,7 @@ const categories = [
   {
     id: "babyshower",
     title: "Baby Shower y Sex Reveal",
-    description: "Decoraciones colores azul y rosa, Extintores de colores, lanzadores de confetti",
+    description: "Decoraciones colores azul y rosa, Extintores de colores, lanzadores de confetti y mas.",
     modalTitle: "Artículos Destacados de Baby Shower y Sex Reveal",
     whatsappMessage: "Hola! Me interesan los productos para baby shower y sex reveal. ¿Podrían darme más información?",
     images: [

@@ -10,7 +10,7 @@ const categories = [
   {
     name: "Cumpleaños",
     icon: Cake,
-    description: "Sorpresas, piñatas, regalos, y temáticas de personajes para tus celebraciones.",
+    description: "Sorpresas, piñatas, regalos, y temáticas de personajes para tus celebraciones y mas.",
     image: "/Cumpleaños/card.jpg",
     modalTitle: "Artículos de Cumpleaños",
     modalDescription: "Encuentra todo para tu fiesta de cumpleaños desde:",
@@ -56,7 +56,7 @@ const categories = [
   {
     name: "Baby Shower & Sex Reveal",
     icon: Baby,
-    description: "Decoraciones, toppers, y lanzadores de confeti para la gran revelación.",
+    description: "Decoraciones, toppers, y lanzadores de confeti para la gran revelación y mas.",
     image: "/Baby Shower/card.jpg",
     modalTitle: "Artículos para Baby Shower & Sex Reveal",
     modalDescription: "Todo para la gran revelación:",
@@ -78,7 +78,7 @@ const categories = [
   {
     name: "Hogar",
     icon: Home,
-    description: "Da un nuevo aire a tus espacios con nuestra decoración para mesas, centros de mesa y floreros.",
+    description: "Da un nuevo aire a tus espacios con nuestra decoración para mesas, centros de mesa, floreros artificiales y mas.",
     image: "/Hogar/card.jpg",
     modalTitle: "Artículos para el Hogar",
     modalDescription: "Transforma tus espacios con:",
@@ -98,7 +98,7 @@ const categories = [
   {
     name: "Despedida de Soltera",
     icon: PartyPopper,
-    description: "Manteles, platos, juegos, y diademas para una celebración inolvidable.",
+    description: "Manteles, platos, juegos, diademas para una celebración inolvidable y mas.",
     image: "/Despedida de Soltera/card.jpg",
     modalTitle: "Artículos para Despedida de Soltera",
     modalDescription: "Juegos, manteles, platos y diademas para hacer de ese momento una celebración inolvidable:",
